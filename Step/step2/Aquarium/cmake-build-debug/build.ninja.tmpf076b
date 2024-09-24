@@ -1,0 +1,561 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Aquarium
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Aquarium
+
+
+#############################################
+# Order-only phony target for Aquarium
+
+build cmake_object_order_depends_target_Aquarium: phony || cmake_object_order_depends_target_AquariumLib
+
+build CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__Aquarium_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.cxx | CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_Aquarium
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/Aquarium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aquarium.dir
+
+build CMakeFiles/Aquarium.dir/main.cpp.o: CXX_COMPILER__Aquarium_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/main.cpp | CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Aquarium
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/Aquarium.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/Aquarium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aquarium.dir
+
+build CMakeFiles/Aquarium.dir/AquariumApp.cpp.o: CXX_COMPILER__Aquarium_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/AquariumApp.cpp | CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Aquarium
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/Aquarium.dir/AquariumApp.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/Aquarium.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aquarium.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Aquarium
+
+
+#############################################
+# Link the executable Aquarium.app/Contents/MacOS/Aquarium
+
+build Aquarium.app/Contents/MacOS/Aquarium: CXX_EXECUTABLE_LINKER__Aquarium_Debug CMakeFiles/Aquarium.dir/main.cpp.o CMakeFiles/Aquarium.dir/AquariumApp.cpp.o | AquariumLib/libAquariumLib.a || AquariumLib/libAquariumLib.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  AquariumLib/libAquariumLib.a  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = CMakeFiles/Aquarium.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Aquarium.app/Contents/MacOS/Aquarium
+  TARGET_PDB = Aquarium.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target AquariumLib
+
+
+#############################################
+# Order-only phony target for AquariumLib
+
+build cmake_object_order_depends_target_AquariumLib: phony || AquariumLib/CMakeFiles/AquariumLib.dir
+
+build AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__AquariumLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.cxx | AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_AquariumLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+  OBJECT_FILE_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+
+build AquariumLib/CMakeFiles/AquariumLib.dir/MainFrame.cpp.o: CXX_COMPILER__AquariumLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/AquariumLib/MainFrame.cpp | AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_AquariumLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = AquariumLib/CMakeFiles/AquariumLib.dir/MainFrame.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+  OBJECT_FILE_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+
+build AquariumLib/CMakeFiles/AquariumLib.dir/AquariumView.cpp.o: CXX_COMPILER__AquariumLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/AquariumLib/AquariumView.cpp | AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_AquariumLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = AquariumLib/CMakeFiles/AquariumLib.dir/AquariumView.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+  OBJECT_FILE_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+
+build AquariumLib/CMakeFiles/AquariumLib.dir/Aquarium.cpp.o: CXX_COMPILER__AquariumLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/AquariumLib/Aquarium.cpp | AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_AquariumLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = AquariumLib/CMakeFiles/AquariumLib.dir/Aquarium.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+  OBJECT_FILE_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target AquariumLib
+
+
+#############################################
+# Link the static library AquariumLib/libAquariumLib.a
+
+build AquariumLib/libAquariumLib.a: CXX_STATIC_LIBRARY_LINKER__AquariumLib_Debug AquariumLib/CMakeFiles/AquariumLib.dir/MainFrame.cpp.o AquariumLib/CMakeFiles/AquariumLib.dir/AquariumView.cpp.o AquariumLib/CMakeFiles/AquariumLib.dir/Aquarium.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = AquariumLib/CMakeFiles/AquariumLib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = AquariumLib/libAquariumLib.a
+  TARGET_PDB = AquariumLib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build AquariumLib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build AquariumLib/edit_cache: phony AquariumLib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build AquariumLib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build AquariumLib/rebuild_cache: phony AquariumLib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build AquariumLib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build AquariumLib/CMakeFiles/install.util: CUSTOM_COMMAND AquariumLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build AquariumLib/install: phony AquariumLib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build AquariumLib/CMakeFiles/install/local.util: CUSTOM_COMMAND AquariumLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build AquariumLib/install/local: phony AquariumLib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build AquariumLib/CMakeFiles/install/strip.util: CUSTOM_COMMAND AquariumLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/AquariumLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build AquariumLib/install/strip: phony AquariumLib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Order-only phony target for Tests_run
+
+build cmake_object_order_depends_target_Tests_run: phony || cmake_object_order_depends_target_AquariumLib cmake_object_order_depends_target_gtest
+
+build Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.cxx | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/Tests/gtest_main.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/Tests/EmptyTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/AquariumTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/Tests/AquariumTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/AquariumTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Link the executable Tests/Tests_run
+
+build Tests/Tests_run: CXX_EXECUTABLE_LINKER__Tests_run_Debug Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o Tests/CMakeFiles/Tests_run.dir/AquariumTest.cpp.o | AquariumLib/libAquariumLib.a lib/libgtestd.a || AquariumLib/libAquariumLib.a lib/libgtestd.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  AquariumLib/libAquariumLib.a  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  lib/libgtestd.a
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Tests/Tests_run
+  TARGET_PDB = Tests_run.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Tests/edit_cache: phony Tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Tests/rebuild_cache: phony Tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Tests/CMakeFiles/install.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Tests/install: phony Tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Tests/CMakeFiles/install/local.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Tests/install/local: phony Tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Tests/install/strip: phony Tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/Tests/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock/include" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmockd.a
+
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmockd.a
+  TARGET_PDB = gmockd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/AquariumLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googlemock" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/Aquarium/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_maind.a
+
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmockd.a lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_maind.a
+  TARGET_PDB = gmock_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/C

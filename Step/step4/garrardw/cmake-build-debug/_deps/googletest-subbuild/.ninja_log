@@ -1,0 +1,21 @@
+# ninja log v5
+0	10	1677518121503688847	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	260838de0fd757f2
+0	10	1677518121503688847	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	260838de0fd757f2
+10	2498	1677518123991719552	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	f6d99ea4f64eafeb
+10	2498	1677518123991719552	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	f6d99ea4f64eafeb
+2498	2531	0	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	e47175f7ebcdff4c
+2498	2531	0	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	e47175f7ebcdff4c
+2531	2541	1677518124034776732	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	a10d750fed2640e2
+2531	2541	1677518124034776732	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	a10d750fed2640e2
+2541	2550	1677518124043785801	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a6fb537b431daef8
+2541	2550	1677518124043785801	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a6fb537b431daef8
+2550	2561	1677518124055042116	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	4d973393e11682f4
+2550	2561	1677518124055042116	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	4d973393e11682f4
+2561	2571	1677518124064770767	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	5dbb4ace1c0b8608
+2561	2571	1677518124064770767	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	5dbb4ace1c0b8608
+2571	2580	1677518124074549210	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	525dcde1bfa2567a
+2571	2580	1677518124074549210	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	525dcde1bfa2567a
+2581	2596	1677518124089922768	CMakeFiles/googletest-populate-complete	4c48bf7b69273ac4
+2581	2596	1677518124089922768	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	4c48bf7b69273ac4
+2581	2596	1677518124089922768	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	4c48bf7b69273ac4
+2581	2596	1677518124089922768	/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	4c48bf7b69273ac4

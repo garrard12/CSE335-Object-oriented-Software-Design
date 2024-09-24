@@ -1,0 +1,102 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "AudenAudenGarrardLib",
+					"jsonFile" : "directory-AudenAudenGarrardLib-Debug-e346689e9118bbd9936e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "AudenAudenGarrardLib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AudenAudenGarrard",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "AudenAudenGarrardLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AudenAudenGarrard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AudenAudenGarrard-Debug-286e92e9ea8a851f3387.json",
+					"name" : "AudenAudenGarrard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AudenAudenGarrardLib::@ed0aa3e0f525a431c490",
+					"jsonFile" : "target-AudenAudenGarrardLib-Debug-be9c572787c07a165cf7.json",
+					"name" : "AudenAudenGarrardLib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug",
+		"source" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard "
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,198 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: miniaudio-populate
+# Configurations: 
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/
+
+#############################################
+# Utility command for miniaudio-populate
+
+build miniaudio-populate: phony CMakeFiles/miniaudio-populate CMakeFiles/miniaudio-populate-complete miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Phony custom command for CMakeFiles/miniaudio-populate
+
+build CMakeFiles/miniaudio-populate | ${cmake_ninja_workdir}CMakeFiles/miniaudio-populate: phony CMakeFiles/miniaudio-populate-complete
+
+
+#############################################
+# Custom command for CMakeFiles/miniaudio-populate-complete
+
+build CMakeFiles/miniaudio-populate-complete miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done | ${cmake_ninja_workdir}CMakeFiles/miniaudio-populate-complete ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate-complete" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done"
+  DESC = Completed 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build"
+  DESC = No build step for 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure: CUSTOM_COMMAND miniaudio-populate-prefix/tmp/miniaudio-populate-cfgcmd.txt miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure"
+  DESC = No configure step for 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-gitinfo.txt miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/tmp/miniaudio-populate-gitclone.cmake" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download"
+  DESC = Performing download step (git clone) for 'miniaudio-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install"
+  DESC = No install step for 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -Dcfgdir= -P "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/tmp/miniaudio-populate-mkdirs.cmake" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir"
+  DESC = Creating directories for 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch"
+  DESC = No patch step for 'miniaudio-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test"
+  DESC = No test step for 'miniaudio-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update
+
+build miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update | ${cmake_ninja_workdir}miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update: CUSTOM_COMMAND miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-src" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P "/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/tmp/miniaudio-populate-gitupdate.cmake"
+  DESC = Performing update step for 'miniaudio-populate'
+  pool = console
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild
+
+build all: phony miniaudio-populate
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt miniaudio-populate-prefix/tmp/miniaudio-populate-mkdirs.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt miniaudio-populate-prefix/tmp/miniaudio-populate-mkdirs.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

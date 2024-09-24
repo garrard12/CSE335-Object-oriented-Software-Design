@@ -1,0 +1,6 @@
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/CMakeFiles/AudenAudenGarrard.dir
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/AudenAudenGarrardLib/CMakeFiles/AudenAudenGarrardLib.dir
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/AudenAudenGarrardLib/CMakeFiles/edit_cache.dir
+/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step2/AudenAudenGarrard /cmake-build-debug/AudenAudenGarrardLib/CMakeFiles/rebuild_cache.dir

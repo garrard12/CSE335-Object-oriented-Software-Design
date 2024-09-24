@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['manglerbitmap_0',['mAnglerBitMap',['../class_angler.html#af6301f728f42218a0fb695100db9fde7',1,'Angler']]],
+  ['manglerimage_1',['mAnglerImage',['../class_angler.html#a7f553958c949ce2b93011481c682575e',1,'Angler']]],
+  ['maquarium_2',['mAquarium',['../class_aquarium_view.html#abb8cecd0d38ff0ca4e67557ab6e42f29',1,'AquariumView::mAquarium()'],['../class_item.html#abc54050a4d3ee1d597b0419e78d16743',1,'Item::mAquarium()']]],
+  ['maquariumview_3',['mAquariumView',['../class_main_frame.html#afa18a7f1dbfd93a682fd31f6447166a8',1,'MainFrame']]],
+  ['mbackground_4',['mBackground',['../class_aquarium.html#ad98f21c24d39057089fa1c9fdcaaaeb6',1,'Aquarium']]],
+  ['mbubblesbitmap_5',['mBubblesBitmap',['../class_bubbles.html#a12dbfe4a85da138fb15e3ada91e15b0a',1,'Bubbles']]],
+  ['mbubblesimage_6',['mBubblesImage',['../class_bubbles.html#a73a1b21c5fc8a08506e1aa6133517f79',1,'Bubbles']]],
+  ['mdoubleclickeditem_7',['mDoubleClickedItem',['../class_aquarium_view.html#a2ceccba994f57fcaf722585b45caada5',1,'AquariumView']]],
+  ['mfishbitmap_8',['mFishBitmap',['../class_fish_beta.html#a8f1cece27213e4294e6b781135155709',1,'FishBeta']]],
+  ['mfishimage_9',['mFishImage',['../class_fish_beta.html#a7e5812b5d631c0313c8e67b20301385c',1,'FishBeta']]],
+  ['mgrabbeditem_10',['mGrabbedItem',['../class_aquarium_view.html#a1c30f76baa0f5d16c791a95f9329ae94',1,'AquariumView']]],
+  ['mgus_11',['mGus',['../class_gus.html#aacfdfe31d56d8f467c192544e93c7209',1,'Gus']]],
+  ['mgusbitmap_12',['mGusBitMap',['../class_gus.html#a2d9a1b586f6a81a93e65a2589a9d12f1',1,'Gus']]],
+  ['mgusimage_13',['mGusImage',['../class_gus.html#a4ef88e40e0c23cff68d9972200961b6e',1,'Gus']]],
+  ['mitems_14',['mItems',['../class_aquarium.html#ad31b86897b90ee304e25a10c60571122',1,'Aquarium']]],
+  ['mx_15',['mX',['../class_item.html#a0064f16cc4294c1e3d783fbe06085d8b',1,'Item']]],
+  ['my_16',['mY',['../class_item.html#a0e6caee189ee2d0961c17a215458d11a',1,'Item']]]
+];

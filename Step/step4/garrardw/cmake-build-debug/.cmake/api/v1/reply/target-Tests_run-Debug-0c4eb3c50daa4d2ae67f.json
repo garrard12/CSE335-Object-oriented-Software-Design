@@ -1,0 +1,461 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Tests/Tests_run"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"include",
+			"target_link_libraries",
+			"set_property",
+			"include_directories",
+			"target_precompile_headers"
+		],
+		"files" : 
+		[
+			"Tests/CMakeLists.txt",
+			"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UsewxWidgets.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 2
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 64,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"fragment" : "-Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang \"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx\" -x c++-header"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "WXUSINGDLL"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXMAC__"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXOSX_COCOA__"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXOSX__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/AquariumLib"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/local/lib/wx/include/osx_cocoa-unicode-3.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/local/include/wx-3.2"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-src/googletest"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					7
+				],
+				"standard" : "17"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 12,
+					"header" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/Tests/../AquariumLib/pch.h"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"fragment" : "-Winvalid-pch -Xarch_arm64 \"-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx\""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "WXUSINGDLL"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXMAC__"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXOSX_COCOA__"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "__WXOSX__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/AquariumLib"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/local/lib/wx/include/osx_cocoa-unicode-3.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/usr/local/include/wx-3.2"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/cmake-build-debug/_deps/googletest-src/googletest"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					7
+				],
+				"standard" : "17"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 12,
+					"header" : "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step4/garrardw/Tests/../AquariumLib/pch.h"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "AquariumLib::@0dac1f7c436f70b299ea"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"id" : "Tests_run::@3e3005ae7443f751ac85",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-L/usr/local/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "AquariumLib/libAquariumLib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-L/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework Carbon",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework Cocoa",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework QuartzCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework AudioToolbox",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework System",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lwx_osx_cocoau_core-3.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lwx_baseu-3.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lwx_osx_cocoau_xrc-3.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lwx_osx_cocoau_html-3.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lwx_baseu_xml-3.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib/libgtestd.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Tests_run",
+	"nameOnDisk" : "Tests_run",
+	"paths" : 
+	{
+		"build" : "Tests",
+		"source" : "Tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Tests/gtest_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Tests/EmptyTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Tests/AquariumTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Tests/ItemTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Tests/FishBetaTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

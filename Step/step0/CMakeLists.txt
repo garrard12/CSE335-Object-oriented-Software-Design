@@ -1,0 +1,39 @@
+# Declare the minimum required CMake version
+cmake_minimum_required(VERSION 3.19)
+set(CMAKE_CXX_STANDARD 17)
+
+# Name the project
+project(Project)
+
+# Request the required wxWidgets libs
+# Turn off wxWidgets own precompiled header system, since
+# it doesn't seem to work. The CMake version works much better.
+set(wxBUILD_PRECOMP OFF)
+find_package(wxWidgets COMPONENTS core base xrc html xml REQUIRED)
+
+# Include the wxWidgets use file to initialize various settings
+include(${wxWidgets_USE_FILE})
+
+# This sets the Mac icon for the program
+set(MACOSX_BUNDLE_ICON_FILE cse335.icns)
+set_source_files_properties(${MACOSX_BUNDLE_ICON_FILE} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
+
+# Define a variable containing a list of source files for the project
+set(SOURCE_FILES main.cpp ProjectApp.h ProjectApp.cpp MainDialog.cpp MainDialog.h resources/cse335.rc ${MACOSX_BUNDLE_ICON_FILE})
+
+# Define the build target for the executable
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE ${SOURCE_FILES})
+
+# Link required libraries to the executable
+target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES})
+
+target_precompile_headers(${PROJECT_NAME} PRIVATE pch.h)
+
+# Copy resources into output directory
+file(COPY resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
+
+if(APPLE)
+    # When building for MacOS, also copy resources into the bundle resources
+    set(RESOURCE_DIR ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}.app/Contents/Resources)
+    file(COPY resources/ DESTINATION ${RESOURCE_DIR}/)
+endif()

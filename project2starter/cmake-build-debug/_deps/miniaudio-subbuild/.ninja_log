@@ -1,0 +1,37 @@
+# ninja log v5
+0	36	0	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update	2005e62955d1e1d6
+46	57	1682642222250804000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure	70dd3c3b4d8eb6a6
+0	10	1681488144788279601	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir	d17625fca4703d0d
+0	570490	1681488988894796064	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download	95c58a14d315742d
+57	68	1682642222261905000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build	5c47971347b480a6
+0	570490	1681488988894796064	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download	95c58a14d315742d
+68	78	1682642222271854000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install	324e6bf0c37d0453
+78	87	1682642222280776000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test	b246d3ccb6885741
+87	100	1682642222294300000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate-complete	ed17a6c1404e1681
+36	46	1682642222240179000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch	da12caa56325baf4
+87	100	1682642222294300000	CMakeFiles/miniaudio-populate-complete	ed17a6c1404e1681
+36	46	1682642222240179000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch	da12caa56325baf4
+0	36	0	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update	2005e62955d1e1d6
+0	10	1681488144788279601	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir	d17625fca4703d0d
+46	57	1682642222250804000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure	70dd3c3b4d8eb6a6
+57	68	1682642222261905000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build	5c47971347b480a6
+68	78	1682642222271854000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install	324e6bf0c37d0453
+78	87	1682642222280776000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test	b246d3ccb6885741
+87	100	1682642222294300000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done	ed17a6c1404e1681
+87	100	1682642222294300000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done	ed17a6c1404e1681
+0	34	0	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update	2005e62955d1e1d6
+0	34	0	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update	2005e62955d1e1d6
+34	45	1682899675333627000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch	da12caa56325baf4
+34	45	1682899675333627000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch	da12caa56325baf4
+45	56	1682899675344898000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure	70dd3c3b4d8eb6a6
+45	56	1682899675344898000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure	70dd3c3b4d8eb6a6
+56	65	1682899675354360000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build	5c47971347b480a6
+56	65	1682899675354360000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build	5c47971347b480a6
+65	75	1682899675364322000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install	324e6bf0c37d0453
+65	75	1682899675364322000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install	324e6bf0c37d0453
+75	85	1682899675373682000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test	b246d3ccb6885741
+75	85	1682899675373682000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test	b246d3ccb6885741
+85	99	1682899675388061000	CMakeFiles/miniaudio-populate-complete	ed17a6c1404e1681
+85	99	1682899675388061000	miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done	ed17a6c1404e1681
+85	99	1682899675388061000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate-complete	ed17a6c1404e1681
+85	99	1682899675388061000	/Users/auden_garrard/Desktop/Code/School/CSE 335 /project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-done	ed17a6c1404e1681

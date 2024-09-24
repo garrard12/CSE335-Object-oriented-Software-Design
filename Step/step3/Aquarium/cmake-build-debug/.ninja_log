@@ -1,0 +1,26 @@
+# ninja log v5
+542	1049	1675274261460726239	Tests/CMakeFiles/Tests_run.dir/FishGusTest.cpp.o	201fcaf120eb3808
+4	448	1675274260860986368	AquariumLib/CMakeFiles/AquariumLib.dir/Angler.cpp.o	fbe04d5fea419753
+971	1225	1674416906259227325	CMakeFiles/Aquarium.dir/main.cpp.o	646f44b9351a8fb1
+4	435	1675274260844484161	AquariumLib/CMakeFiles/AquariumLib.dir/Item.cpp.o	848bf7e35d27f7ce
+4	232	1675274780584713649	AquariumLib/CMakeFiles/AquariumLib.dir/Gus.cpp.o	db8b5a846d066b0
+0	969	1674416906002949649	CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch	3bd17649456e9e77
+4	470	1675274260875762880	AquariumLib/CMakeFiles/AquariumLib.dir/FishBeta.cpp.o	e4b58825816555a4
+295	431	1675274780785703279	Tests/Tests_run	613ffd2b463540d6
+3	521	1675274260928054980	AquariumLib/CMakeFiles/AquariumLib.dir/MainFrame.cpp.o	5d8f632359c91877
+1122	1476	1674581494663517221	Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o	9aa952326b4b1c59
+2	1504	1674581494690648781	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	39d3560e9e08b47d
+0	971	1674416906004714381	AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch	e379c711c24910da
+3	291	1675274788480686676	CMakeFiles/Aquarium.dir/AquariumApp.cpp.o	283a7fdd35fcc18a
+435	735	1675274261147308344	AquariumLib/CMakeFiles/AquariumLib.dir/Bubbles.cpp.o	cda3baacf353f6ff
+291	426	1675274788617131925	Aquarium.app/Contents/MacOS/Aquarium	6ba296c18faa5bed
+527	1025	1675274261436572799	Tests/CMakeFiles/Tests_run.dir/FishBetaTest.cpp.o	c2cd74bc485d9563
+1122	1488	1674581494678411311	Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o	4c451fd4045a35df
+2	1122	1674581494308056448	Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch	6242e3d15d000945
+1505	1541	1674581494733502000	lib/libgtestd.a	49d0bf04b6f1a1e1
+3	253	1675274780606125736	AquariumLib/CMakeFiles/AquariumLib.dir/Aquarium.cpp.o	7e2bf4190600f191
+4	527	1675274260938869355	AquariumLib/CMakeFiles/AquariumLib.dir/AquariumView.cpp.o	abe1def88942a923
+4	229	1674925699520438094	AquariumLib/CMakeFiles/AquariumLib.dir/GaseousGus.cpp.o	46afb3161cafe4e9
+253	295	1675274780650681000	AquariumLib/libAquariumLib.a	2fc95ffc8becd5bf
+521	1043	1675274261455043908	Tests/CMakeFiles/Tests_run.dir/ItemTest.cpp.o	1db75211d8055ee9
+470	1020	1675274261427797241	Tests/CMakeFiles/Tests_run.dir/AquariumTest.cpp.o	5d85ae76653272b

@@ -1,0 +1,1041 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: CanadianExperience
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target CanadianExperience
+
+build CanadianExperience.app/Contents/Resources/CanadianExperienceIcon.icns: COPY_OSX_CONTENT /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceIcon.icns
+
+
+#############################################
+# Order-only phony target for CanadianExperience
+
+build cmake_object_order_depends_target_CanadianExperience: phony || CanadianExperience.app/Contents/Resources/CanadianExperienceIcon.icns cmake_object_order_depends_target_CanadianExperienceLib
+
+build CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__CanadianExperience_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx.cxx | CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_CanadianExperience
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/CanadianExperience.dir
+  OBJECT_FILE_DIR = CMakeFiles/CanadianExperience.dir
+
+build CMakeFiles/CanadianExperience.dir/main.cpp.o: CXX_COMPILER__CanadianExperience_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/main.cpp | CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperience
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/CanadianExperience.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/CanadianExperience.dir
+  OBJECT_FILE_DIR = CMakeFiles/CanadianExperience.dir
+
+build CMakeFiles/CanadianExperience.dir/CanadianExperienceApp.cpp.o: CXX_COMPILER__CanadianExperience_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceApp.cpp | CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperience
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/CanadianExperience.dir/CanadianExperienceApp.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CMakeFiles/CanadianExperience.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/CanadianExperience.dir
+  OBJECT_FILE_DIR = CMakeFiles/CanadianExperience.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CanadianExperience
+
+
+#############################################
+# Link the executable CanadianExperience.app/Contents/MacOS/CanadianExperience
+
+build CanadianExperience.app/Contents/MacOS/CanadianExperience: CXX_EXECUTABLE_LINKER__CanadianExperience_Debug CMakeFiles/CanadianExperience.dir/main.cpp.o CMakeFiles/CanadianExperience.dir/CanadianExperienceApp.cpp.o | CanadianExperienceLib/libCanadianExperienceLib.a || CanadianExperienceLib/libCanadianExperienceLib.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  CanadianExperienceLib/libCanadianExperienceLib.a  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = CMakeFiles/CanadianExperience.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CanadianExperience.app/Contents/MacOS/CanadianExperience
+  TARGET_PDB = CanadianExperience.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target CanadianExperienceLib
+
+
+#############################################
+# Order-only phony target for CanadianExperienceLib
+
+build cmake_object_order_depends_target_CanadianExperienceLib: phony || CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.cxx | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/MainFrame.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/MainFrame.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/MainFrame.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewEdit.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/ViewEdit.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewEdit.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewTimeline.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/ViewTimeline.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewTimeline.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureObserver.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/PictureObserver.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureObserver.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Picture.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/Picture.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Picture.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Drawable.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/Drawable.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Drawable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Actor.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/Actor.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Actor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PolyDrawable.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/PolyDrawable.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PolyDrawable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureFactory.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/PictureFactory.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureFactory.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HaroldFactory.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/HaroldFactory.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HaroldFactory.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ImageDrawable.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/ImageDrawable.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ImageDrawable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HeadTop.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/HeadTop.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HeadTop.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AmmyFactory.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/AmmyFactory.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AmmyFactory.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Timeline.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/Timeline.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Timeline.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/TimelineDlg.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/TimelineDlg.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/TimelineDlg.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannel.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/AnimChannel.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannel.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelAngle.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/AnimChannelAngle.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelAngle.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+build CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelPosition.cpp.o: CXX_COMPILER__CanadianExperienceLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/AnimChannelPosition.cpp | CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CanadianExperienceLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelPosition.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  OBJECT_FILE_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target CanadianExperienceLib
+
+
+#############################################
+# Link the static library CanadianExperienceLib/libCanadianExperienceLib.a
+
+build CanadianExperienceLib/libCanadianExperienceLib.a: CXX_STATIC_LIBRARY_LINKER__CanadianExperienceLib_Debug CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/MainFrame.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewEdit.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ViewTimeline.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureObserver.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Picture.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Drawable.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Actor.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PolyDrawable.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/PictureFactory.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HaroldFactory.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/ImageDrawable.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/HeadTop.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AmmyFactory.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/Timeline.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/TimelineDlg.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannel.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelAngle.cpp.o CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir/AnimChannelPosition.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CanadianExperienceLib/CMakeFiles/CanadianExperienceLib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CanadianExperienceLib/libCanadianExperienceLib.a
+  TARGET_PDB = CanadianExperienceLib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CanadianExperienceLib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build CanadianExperienceLib/edit_cache: phony CanadianExperienceLib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CanadianExperienceLib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build CanadianExperienceLib/rebuild_cache: phony CanadianExperienceLib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build CanadianExperienceLib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CanadianExperienceLib/CMakeFiles/install.util: CUSTOM_COMMAND CanadianExperienceLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build CanadianExperienceLib/install: phony CanadianExperienceLib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CanadianExperienceLib/CMakeFiles/install/local.util: CUSTOM_COMMAND CanadianExperienceLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build CanadianExperienceLib/install/local: phony CanadianExperienceLib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CanadianExperienceLib/CMakeFiles/install/strip.util: CUSTOM_COMMAND CanadianExperienceLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build CanadianExperienceLib/install/strip: phony CanadianExperienceLib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Order-only phony target for Tests_run
+
+build cmake_object_order_depends_target_Tests_run: phony || cmake_object_order_depends_target_CanadianExperienceLib cmake_object_order_depends_target_gtest
+
+build Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.cxx | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/gtest_main.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/EmptyTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/PictureObserverTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/PictureObserverTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/PictureObserverTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/PictureTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/PictureTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/PictureTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/ActorTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/ActorTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/ActorTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/DrawableTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/DrawableTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/DrawableTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/PolyDrawableTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/PolyDrawableTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/PolyDrawableTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/ImageDrawableTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/ImageDrawableTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/ImageDrawableTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/TimelineTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/TimelineTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/TimelineTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+build Tests/CMakeFiles/Tests_run.dir/AnimChannelAngleTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/AnimChannelAngleTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/AnimChannelAngleTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Link the executable Tests/Tests_run
+
+build Tests/Tests_run: CXX_EXECUTABLE_LINKER__Tests_run_Debug Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o Tests/CMakeFiles/Tests_run.dir/PictureObserverTest.cpp.o Tests/CMakeFiles/Tests_run.dir/PictureTest.cpp.o Tests/CMakeFiles/Tests_run.dir/ActorTest.cpp.o Tests/CMakeFiles/Tests_run.dir/DrawableTest.cpp.o Tests/CMakeFiles/Tests_run.dir/PolyDrawableTest.cpp.o Tests/CMakeFiles/Tests_run.dir/ImageDrawableTest.cpp.o Tests/CMakeFiles/Tests_run.dir/TimelineTest.cpp.o Tests/CMakeFiles/Tests_run.dir/AnimChannelAngleTest.cpp.o | CanadianExperienceLib/libCanadianExperienceLib.a lib/libgtestd.a || CanadianExperienceLib/libCanadianExperienceLib.a lib/libgtestd.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  CanadianExperienceLib/libCanadianExperienceLib.a  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  lib/libgtestd.a
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Tests/Tests_run
+  TARGET_PDB = Tests_run.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Tests/edit_cache: phony Tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Tests/rebuild_cache: phony Tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Tests/CMakeFiles/install.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Tests/install: phony Tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Tests/CMakeFiles/install/local.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Tests/install/local: phony Tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Tests/install/strip: phony Tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/Tests/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock/include" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmockd.a
+
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmockd.a
+  TARGET_PDB = gmockd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_maind.a
+
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmockd.a lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_maind.a
+  TARGET_PDB = gmock_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-build/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-build/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtestd.a
+
+build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtestd.a
+  TARGET_PDB = gtestd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/CanadianExperienceLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_maind.a
+
+build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_maind.a
+  TARGET_PDB = gtest_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian" -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install: phony _deps/googletest-build/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/local: phony _deps/googletest-build/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build CanadianExperience: phony CanadianExperience.app/Contents/MacOS/CanadianExperience
+
+build CanadianExperienceLib: phony CanadianExperienceLib/libCanadianExperienceLib.a
+
+build Tests_run: phony Tests/Tests_run
+
+build gmock: phony lib/libgmockd.a
+
+build gmock_main: phony lib/libgmock_maind.a
+
+build gtest: phony lib/libgtestd.a
+
+build gtest_main: phony lib/libgtest_maind.a
+
+build libCanadianExperienceLib.a: phony CanadianExperienceLib/libCanadianExperienceLib.a
+
+build libgmock_maind.a: phony lib/libgmock_maind.a
+
+build libgmockd.a: phony lib/libgmockd.a
+
+build libgtest_maind.a: phony lib/libgtest_maind.a
+
+build libgtestd.a: phony lib/libgtestd.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug
+
+build all: phony CanadianExperience.app/Contents/MacOS/CanadianExperience CanadianExperienceLib/all Tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/CanadianExperienceLib
+
+build CanadianExperienceLib/all: phony CanadianExperienceLib/libCanadianExperienceLib.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/Tests
+
+build Tests/all: phony Tests/Tests_run _deps/googletest-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build
+
+build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googlemock
+
+build _deps/googletest-build/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a _deps/googletest-build/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step7/canadian/cmake-build-debug/_deps/googletest-build/googletest
+
+build _deps/googletest-build/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython/Support.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindwxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UsewxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython/Support.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindwxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UsewxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/CanadianExperienceLib/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step7/canadian/Tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

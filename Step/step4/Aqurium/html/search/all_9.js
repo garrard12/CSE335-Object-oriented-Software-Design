@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainframe_1',['MainFrame',['../class_main_frame.html',1,'']]],
+  ['mainframe_2ecpp_2',['MainFrame.cpp',['../_main_frame_8cpp.html',1,'']]],
+  ['mainframe_2eh_3',['MainFrame.h',['../_main_frame_8h.html',1,'']]],
+  ['makefishdifferent_4',['makeFishDifferent',['../class_angler.html#af35d8ebfaead856db7fa4d5ab8dfce9c',1,'Angler::makeFishDifferent()'],['../class_bubbles.html#a1c0b1543112a16bbd1efa62999c35dfc',1,'Bubbles::makeFishDifferent()'],['../class_fish.html#a80bf264e0045b78871ba6760b1dd88ff',1,'Fish::makeFishDifferent()'],['../class_fish_beta.html#a7074825af0b2e165a390282c047c191b',1,'FishBeta::makeFishDifferent()']]],
+  ['maquarium_5',['mAquarium',['../class_aquarium_view.html#abb8cecd0d38ff0ca4e67557ab6e42f29',1,'AquariumView::mAquarium()'],['../class_item.html#abc54050a4d3ee1d597b0419e78d16743',1,'Item::mAquarium()']]],
+  ['maquariumview_6',['mAquariumView',['../class_main_frame.html#afa18a7f1dbfd93a682fd31f6447166a8',1,'MainFrame']]],
+  ['maxspeedx_7',['MaxSpeedX',['../_fish_8cpp.html#a84803bf135ee6b4290f36716edeea269',1,'Fish.cpp']]],
+  ['mbackground_8',['mBackground',['../class_aquarium.html#ad98f21c24d39057089fa1c9fdcaaaeb6',1,'Aquarium']]],
+  ['mdoubleclickeditem_9',['mDoubleClickedItem',['../class_aquarium_view.html#a2ceccba994f57fcaf722585b45caada5',1,'AquariumView']]],
+  ['mgrabbeditem_10',['mGrabbedItem',['../class_aquarium_view.html#a1c30f76baa0f5d16c791a95f9329ae94',1,'AquariumView']]],
+  ['minspeedx_11',['MinSpeedX',['../_fish_8cpp.html#af1c1a50745fc8f450af923903963cb6e',1,'Fish.cpp']]],
+  ['mitembitmap_12',['mItemBitmap',['../class_item.html#a6c95e8250b921a9c16add829c9c265d4',1,'Item']]],
+  ['mitemimage_13',['mItemImage',['../class_item.html#a544bf2e294106071bc08d6a67b249a61',1,'Item']]],
+  ['mitems_14',['mItems',['../class_aquarium.html#ad31b86897b90ee304e25a10c60571122',1,'Aquarium']]],
+  ['mmirror_15',['mMirror',['../class_item.html#a396ea6facc8ac83e61b75b5586a6dffa',1,'Item']]],
+  ['movefish_16',['MoveFish',['../_aquarium_8cpp.html#a948d7bde76cc9a3788a7c2430c8d061f',1,'Aquarium.cpp']]],
+  ['mrandom_17',['mRandom',['../class_aquarium.html#a939feb4e580af0e9a2a9f3e2a52ace06',1,'Aquarium']]],
+  ['mspeedx_18',['mSpeedX',['../class_fish.html#aef3cf8cfefd1a00075eb6c3be5d111df',1,'Fish']]],
+  ['mspeedy_19',['mSpeedY',['../class_fish.html#ab6768dbb12db9349ebf130142766d602',1,'Fish']]],
+  ['mstopwatch_20',['mStopWatch',['../class_aquarium_view.html#a9a5e7ec107f010a53d97c7f6357a4ed8',1,'AquariumView']]],
+  ['mtime_21',['mTime',['../class_aquarium_view.html#a8322034217fff2db62882c2cc10c8b64',1,'AquariumView']]],
+  ['mtimer_22',['mTimer',['../class_aquarium_view.html#a2bda7cf62ccbb86b074ab01c94302fe5',1,'AquariumView']]],
+  ['mx_23',['mX',['../class_item.html#a0064f16cc4294c1e3d783fbe06085d8b',1,'Item']]],
+  ['my_24',['mY',['../class_item.html#a0e6caee189ee2d0961c17a215458d11a',1,'Item']]]
+];

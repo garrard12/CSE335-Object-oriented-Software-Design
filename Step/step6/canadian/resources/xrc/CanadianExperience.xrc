@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxFrame" name="MainFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<pos>50,50</pos>
+		<size>1000,800</size>
+		<title>Candian Experiences</title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxMenuBar" name="m_menubar1">
+			<object class="wxMenu" name="FileMenu">
+				<label>_File</label>
+				<object class="wxMenuItem" name="wxID_EXIT">
+					<label>E_xit\tAlt-X</label>
+					<help>Exit this app</help>
+				</object>
+			</object>
+			<object class="wxMenu" name="&amp;Edit">
+				<label>Edit</label>
+				<object class="wxMenuItem" name="EditMove">
+					<label>_Move</label>
+					<help>Use the mouse to move</help>
+					<checkable>1</checkable>
+				</object>
+				<object class="wxMenuItem" name="EditRotate">
+					<label>_Rotate</label>
+					<help>Use the mouse to rotate</help>
+					<checkable>1</checkable>
+				</object>
+			</object>
+			<object class="wxMenu" name="HelpMenu">
+				<label>_Help</label>
+				<object class="wxMenuItem" name="wxID_ABOUT">
+					<label>_About\tF1</label>
+					<help>About App</help>
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="m_statusBar1">
+			<style>wxSTB_SIZEGRIP</style>
+			<fields>1</fields>
+		</object>
+		<object class="wxToolBar" name="ToolBar">
+			<style>wxTB_HORIZONTAL</style>
+			<bitmapsize>32,32</bitmapsize>
+			<margins></margins>
+			<packing>1</packing>
+			<separation>5</separation>
+			<object class="tool" name="EditMove">
+				<label>Move</label>
+				<tooltip></tooltip>
+				<longhelp></longhelp>
+				<bitmap>move32.png</bitmap>
+				<toggle>1</toggle>
+			</object>
+			<object class="tool" name="EditRotate">
+				<label>Rotate</label>
+				<tooltip></tooltip>
+				<longhelp></longhelp>
+				<bitmap>rotate32.png</bitmap>
+				<toggle>1</toggle>
+			</object>
+			<object class="tool" name="SetKeyframe">
+				<label>Set Keyframe</label>
+				<tooltip></tooltip>
+				<longhelp></longhelp>
+				<bitmap>../../../../step7/canadian/resources/xrc/record32.png</bitmap>
+			</object>
+			<object class="tool" name="DeleteKeyframe">
+				<label>Delete Keyframe</label>
+				<tooltip></tooltip>
+				<longhelp></longhelp>
+				<bitmap>../../../../step7/canadian/resources/xrc/delete32.png</bitmap>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="AboutDialog">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<title>About Canadian Experience</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL</flag>
+				<border>5</border>
+				<object class="wxStaticBitmap" name="m_bitmap1">
+					<bitmap>about-image.jpg</bitmap>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+				<border>5</border>
+				<object class="wxStaticText" name="m_staticText1">
+					<label>The Canadian Experience!</label>
+					<wrap>-1</wrap>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+				<border>5</border>
+				<object class="wxButton" name="wxID_OK">
+					<label>Ok</label>
+					<default>0</default>
+					<auth_needed>0</auth_needed>
+					<markup>0</markup>
+					<bitmap />
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

@@ -1,0 +1,25 @@
+# ninja log v5
+0	904	1677518129960015655	CMakeFiles/Aquarium.dir/cmake_pch_arm64.hxx.pch	8ca9d4059db9bb12
+0	911	1677518129968435725	AquariumLib/CMakeFiles/AquariumLib.dir/cmake_pch_arm64.hxx.pch	baffb19015dc5a17
+906	1092	1677518130149880142	CMakeFiles/Aquarium.dir/main.cpp.o	14904196afe06f2a
+906	1100	1677518130159148627	CMakeFiles/Aquarium.dir/AquariumApp.cpp.o	311a5c4a814ae054
+912	1136	1677518130193747321	AquariumLib/CMakeFiles/AquariumLib.dir/Item.cpp.o	6f41b3e0d872cd39
+911	1151	1677518130208222965	AquariumLib/CMakeFiles/AquariumLib.dir/MainFrame.cpp.o	f13af61930ae8ff7
+912	1193	1677518130250189605	AquariumLib/CMakeFiles/AquariumLib.dir/AquariumView.cpp.o	41044cd6c687efae
+911	1197	1677518130254816681	AquariumLib/CMakeFiles/AquariumLib.dir/Aquarium.cpp.o	22b3b6ad154b89cd
+1092	1303	1677518130360786261	AquariumLib/CMakeFiles/AquariumLib.dir/FishBeta.cpp.o	6fd215df2111e031
+1101	1309	1677518130367399042	AquariumLib/CMakeFiles/AquariumLib.dir/Angler.cpp.o	cc0e24e0b91a386c
+1136	1346	1677518130404211607	AquariumLib/CMakeFiles/AquariumLib.dir/Bubbles.cpp.o	414f52030897af94
+1151	1357	1677518130415257881	AquariumLib/CMakeFiles/AquariumLib.dir/Castle.cpp.o	ccc555fa967ca48a
+1193	1400	1677518130458170479	AquariumLib/CMakeFiles/AquariumLib.dir/Fish.cpp.o	d17bcd2719fcebe1
+1400	1438	1677518130500489000	AquariumLib/libAquariumLib.a	fb107c79b68d1d6
+1438	1570	1677518130630165410	Aquarium.app/Contents/MacOS/Aquarium	6ba296c18faa5bed
+8	1526	1678887117119790391	Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch	f1b06cc4e0cf3381
+9	1766	1678887117355930721	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	6cad2267d37008fe
+1766	1824	1678887117420513000	lib/libgtestd.a	49d0bf04b6f1a1e1
+1526	1910	1678887117504241470	Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o	b3aa0fb87e25e888
+1527	1923	1678887117517308539	Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o	fa4824baaf4c9c99
+1527	2019	1678887117613072012	Tests/CMakeFiles/Tests_run.dir/FishBetaTest.cpp.o	1c412c694bd7963
+1527	2024	1678887117618698101	Tests/CMakeFiles/Tests_run.dir/ItemTest.cpp.o	bcd54b8a5aca8ce8
+1527	2445	1678887118038172363	Tests/CMakeFiles/Tests_run.dir/AquariumTest.cpp.o	8bfd05fd15005ee7
+2445	2599	1678887118196120854	Tests/Tests_run	43f530aecb99c2a6

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/machinedemolib-build",
+		"source" : "cmake-build-debug/_deps/machinedemolib-src"
+	}
+}

@@ -1,0 +1,1062 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: City
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target City
+
+build City.app/Contents/Resources/city.icns: COPY_OSX_CONTENT /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /city.icns
+
+
+#############################################
+# Order-only phony target for City
+
+build cmake_object_order_depends_target_City: phony || City.app/Contents/Resources/city.icns cmake_object_order_depends_target_CityLib
+
+build CMakeFiles/City.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__City_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/CMakeFiles/City.dir/cmake_pch_arm64.hxx.cxx | CMakeFiles/City.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_City
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/City.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CMakeFiles/City.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/City.dir
+  OBJECT_FILE_DIR = CMakeFiles/City.dir
+  TARGET_COMPILE_PDB = CMakeFiles/City.dir/
+  TARGET_PDB = City.pdb
+
+build CMakeFiles/City.dir/main.cpp.o: CXX_COMPILER__City_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /main.cpp | CMakeFiles/City.dir/cmake_pch_arm64.hxx CMakeFiles/City.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_City
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/City.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CMakeFiles/City.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/City.dir
+  OBJECT_FILE_DIR = CMakeFiles/City.dir
+  TARGET_COMPILE_PDB = CMakeFiles/City.dir/
+  TARGET_PDB = City.pdb
+
+build CMakeFiles/City.dir/CityApp.cpp.o: CXX_COMPILER__City_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityApp.cpp | CMakeFiles/City.dir/cmake_pch_arm64.hxx CMakeFiles/City.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_City
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/City.dir/CityApp.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CMakeFiles/City.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/City.dir
+  OBJECT_FILE_DIR = CMakeFiles/City.dir
+  TARGET_COMPILE_PDB = CMakeFiles/City.dir/
+  TARGET_PDB = City.pdb
+
+build CMakeFiles/City.dir/CityLib/TileVisitor.cpp.o: CXX_COMPILER__City_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileVisitor.cpp | CMakeFiles/City.dir/cmake_pch_arm64.hxx CMakeFiles/City.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_City
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/City.dir/CityLib/TileVisitor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CMakeFiles/City.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CMakeFiles/City.dir
+  OBJECT_FILE_DIR = CMakeFiles/City.dir/CityLib
+  TARGET_COMPILE_PDB = CMakeFiles/City.dir/
+  TARGET_PDB = City.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target City
+
+
+#############################################
+# Link the executable City.app/Contents/MacOS/City
+
+build City.app/Contents/MacOS/City: CXX_EXECUTABLE_LINKER__City_Debug CMakeFiles/City.dir/main.cpp.o CMakeFiles/City.dir/CityApp.cpp.o CMakeFiles/City.dir/CityLib/TileVisitor.cpp.o | CityLib/libCityLib.a || CityLib/libCityLib.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  CityLib/libCityLib.a
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = CMakeFiles/City.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/City.dir/
+  TARGET_FILE = City.app/Contents/MacOS/City
+  TARGET_PDB = City.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target CityLib
+
+
+#############################################
+# Order-only phony target for CityLib
+
+build cmake_object_order_depends_target_CityLib: phony || CityLib/CMakeFiles/CityLib.dir
+
+build CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.cxx | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/City.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/City.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/City.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/Tile.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/Tile.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/Tile.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/CityReport.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/CityReport.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/CityReport.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/MemberReport.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/MemberReport.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/MemberReport.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/TileBuilding.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileBuilding.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/TileBuilding.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/TileGarden.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileGarden.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/TileGarden.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/TileLandscape.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileLandscape.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/TileLandscape.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/MainFrame.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/MainFrame.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/MainFrame.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/CityView.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/CityView.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/CityView.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/TileWater.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileWater.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/TileWater.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/Starship.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/Starship.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/Starship.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/TileStarshipPad.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/TileStarshipPad.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/TileStarshipPad.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/BuildingCounter.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/BuildingCounter.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/BuildingCounter.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/RocketCounter.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/RocketCounter.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/RocketCounter.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/PadVisitor.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/PadVisitor.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/PadVisitor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+build CityLib/CMakeFiles/CityLib.dir/DeletePadVisitor.cpp.o: CXX_COMPILER__CityLib_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/DeletePadVisitor.cpp | CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_CityLib
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CityLib/CMakeFiles/CityLib.dir/DeletePadVisitor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib/CMakeFiles/CityLib.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  OBJECT_FILE_DIR = CityLib/CMakeFiles/CityLib.dir
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target CityLib
+
+
+#############################################
+# Link the static library CityLib/libCityLib.a
+
+build CityLib/libCityLib.a: CXX_STATIC_LIBRARY_LINKER__CityLib_Debug CityLib/CMakeFiles/CityLib.dir/City.cpp.o CityLib/CMakeFiles/CityLib.dir/Tile.cpp.o CityLib/CMakeFiles/CityLib.dir/CityReport.cpp.o CityLib/CMakeFiles/CityLib.dir/MemberReport.cpp.o CityLib/CMakeFiles/CityLib.dir/TileBuilding.cpp.o CityLib/CMakeFiles/CityLib.dir/TileGarden.cpp.o CityLib/CMakeFiles/CityLib.dir/TileLandscape.cpp.o CityLib/CMakeFiles/CityLib.dir/MainFrame.cpp.o CityLib/CMakeFiles/CityLib.dir/CityView.cpp.o CityLib/CMakeFiles/CityLib.dir/TileWater.cpp.o CityLib/CMakeFiles/CityLib.dir/Starship.cpp.o CityLib/CMakeFiles/CityLib.dir/TileStarshipPad.cpp.o CityLib/CMakeFiles/CityLib.dir/BuildingCounter.cpp.o CityLib/CMakeFiles/CityLib.dir/RocketCounter.cpp.o CityLib/CMakeFiles/CityLib.dir/PadVisitor.cpp.o CityLib/CMakeFiles/CityLib.dir/DeletePadVisitor.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CityLib/CMakeFiles/CityLib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CityLib/CMakeFiles/CityLib.dir/CityLib.pdb
+  TARGET_FILE = CityLib/libCityLib.a
+  TARGET_PDB = CityLib/libCityLib.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CityLib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build CityLib/edit_cache: phony CityLib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CityLib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build CityLib/rebuild_cache: phony CityLib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build CityLib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CityLib/CMakeFiles/install.util: CUSTOM_COMMAND CityLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build CityLib/install: phony CityLib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CityLib/CMakeFiles/install/local.util: CUSTOM_COMMAND CityLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build CityLib/install/local: phony CityLib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CityLib/CMakeFiles/install/strip.util: CUSTOM_COMMAND CityLib/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build CityLib/install/strip: phony CityLib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Order-only phony target for Tests_run
+
+build cmake_object_order_depends_target_Tests_run: phony || cmake_object_order_depends_target_CityLib cmake_object_order_depends_target_gtest
+
+build Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.cxx | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx" -x c++-header
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+build Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/gtest_main.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+build Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/EmptyTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+build Tests/CMakeFiles/Tests_run.dir/TileTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/TileTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/TileTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+build Tests/CMakeFiles/Tests_run.dir/CityTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/CityTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/CityTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+build Tests/CMakeFiles/Tests_run.dir/CityReportTest.cpp.o: CXX_COMPILER__Tests_run_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/CityReportTest.cpp | Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx.pch || cmake_object_order_depends_target_Tests_run
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = Tests/CMakeFiles/Tests_run.dir/CityReportTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17 -Winvalid-pch -Xarch_arm64 "-include/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests/CMakeFiles/Tests_run.dir/cmake_pch_arm64.hxx"
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  OBJECT_FILE_DIR = Tests/CMakeFiles/Tests_run.dir
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_PDB = Tests/Tests_run.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tests_run
+
+
+#############################################
+# Link the executable Tests/Tests_run
+
+build Tests/Tests_run: CXX_EXECUTABLE_LINKER__Tests_run_Debug Tests/CMakeFiles/Tests_run.dir/gtest_main.cpp.o Tests/CMakeFiles/Tests_run.dir/EmptyTest.cpp.o Tests/CMakeFiles/Tests_run.dir/TileTest.cpp.o Tests/CMakeFiles/Tests_run.dir/CityTest.cpp.o Tests/CMakeFiles/Tests_run.dir/CityReportTest.cpp.o | CityLib/libCityLib.a lib/libgtestd.a || CityLib/libCityLib.a lib/libgtestd.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  CityLib/libCityLib.a  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.2  -lwx_baseu-3.2  -lwx_osx_cocoau_xrc-3.2  -lwx_osx_cocoau_html-3.2  -lwx_baseu_xml-3.2  lib/libgtestd.a
+  LINK_PATH = -L/usr/local/lib
+  OBJECT_DIR = Tests/CMakeFiles/Tests_run.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = Tests/CMakeFiles/Tests_run.dir/
+  TARGET_FILE = Tests/Tests_run
+  TARGET_PDB = Tests/Tests_run.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build Tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Tests/edit_cache: phony Tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Tests/rebuild_cache: phony Tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build Tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build Tests/CMakeFiles/install.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build Tests/install: phony Tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build Tests/CMakeFiles/install/local.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build Tests/install/local: phony Tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build Tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND Tests/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build Tests/install/strip: phony Tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /Tests/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googlemock/include" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googlemock" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
+  TARGET_COMPILE_PDB = bin/libgmockd.pdb
+  TARGET_PDB = bin/libgmockd.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmockd.a
+
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmockd.pdb
+  TARGET_FILE = lib/libgmockd.a
+  TARGET_PDB = bin/libgmockd.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googlemock/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googlemock" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgmock_maind.pdb
+  TARGET_PDB = bin/libgmock_maind.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_maind.a
+
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmockd.a lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmock_maind.pdb
+  TARGET_FILE = lib/libgmock_maind.a
+  TARGET_PDB = bin/libgmock_maind.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-build/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-build/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
+  TARGET_COMPILE_PDB = bin/libgtestd.pdb
+  TARGET_PDB = bin/libgtestd.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtestd.a
+
+build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtestd.pdb
+  TARGET_FILE = lib/libgtestd.a
+  TARGET_PDB = bin/libgtestd.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++17
+  INCLUDES = -I"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /CityLib" -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.2 -isystem /usr/local/include/wx-3.2 -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest/include" -isystem "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-src/googletest"
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgtest_maind.pdb
+  TARGET_PDB = bin/libgtest_maind.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_maind.a
+
+build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtest_maind.pdb
+  TARGET_FILE = lib/libgtest_maind.a
+  TARGET_PDB = bin/libgtest_maind.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city " -B"/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install: phony _deps/googletest-build/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/local: phony _deps/googletest-build/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd "/Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build City: phony City.app/Contents/MacOS/City
+
+build CityLib: phony CityLib/libCityLib.a
+
+build Tests_run: phony Tests/Tests_run
+
+build gmock: phony lib/libgmockd.a
+
+build gmock_main: phony lib/libgmock_maind.a
+
+build gtest: phony lib/libgtestd.a
+
+build gtest_main: phony lib/libgtest_maind.a
+
+build libCityLib.a: phony CityLib/libCityLib.a
+
+build libgmock_maind.a: phony lib/libgmock_maind.a
+
+build libgmockd.a: phony lib/libgmockd.a
+
+build libgtest_maind.a: phony lib/libgtest_maind.a
+
+build libgtestd.a: phony lib/libgtestd.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug
+
+build all: phony City.app/Contents/MacOS/City CityLib/all Tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/CityLib
+
+build CityLib/all: phony CityLib/libCityLib.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/Tests
+
+build Tests/all: phony Tests/Tests_run _deps/googletest-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build
+
+build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googlemock
+
+build _deps/googletest-build/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a _deps/googletest-build/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/auden_garrard/Desktop/Code/School/CSE 335 /Step/step5/city /cmake-build-debug/_deps/googletest-build/googletest
+
+build _deps/googletest-build/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython/Support.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindwxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UsewxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPython/Support.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindwxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/MacOSXBundleInfo.plist.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/UsewxWidgets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /CityLib/CMakeLists.txt /Users/auden_garrard/Desktop/Code/School/CSE$ 335$ /Step/step5/city$ /Tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

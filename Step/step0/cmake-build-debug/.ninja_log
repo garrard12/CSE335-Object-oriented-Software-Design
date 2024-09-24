@@ -1,0 +1,7 @@
+# ninja log v5
+0	10	1673307011530478749	Project.app/Contents/Resources/cse335.icns	e150814c2caf7aaf
+11	946	1673307012461707389	CMakeFiles/Project.dir/cmake_pch_arm64.hxx.pch	52041513c7f5cbca
+947	1127	1673307012643655195	CMakeFiles/Project.dir/main.cpp.o	ff4a0f3fbae3f32c
+947	1148	1673307012665353852	CMakeFiles/Project.dir/ProjectApp.cpp.o	32f2d252a48bfb1e
+947	1167	1673307012683884481	CMakeFiles/Project.dir/MainDialog.cpp.o	9a8b97d005284928
+1167	1311	1673307012829106360	Project.app/Contents/MacOS/Project	2376258b4aebb0a2
