@@ -53,7 +53,7 @@ TEST(PictureTest, Iterator)
 
 	iter1 = picture.begin();
 	iter2 = picture.end();
-	ASSERT_TRUE(iter1 != iter2);
+	ASSERT_TRUE(iter1 != iter2); 
 	ASSERT_TRUE(*iter1 == actor1);
 	++iter1;
 	ASSERT_TRUE(iter1 != iter2);
